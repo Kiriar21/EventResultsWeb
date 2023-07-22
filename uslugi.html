@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacje o pomiarze oraz dostępnej ofercie firmy Nazwa Firmy">
+    <meta name="robots" content="   index,follow">
+    <title>Pomiar Czasu</title>
+    <link rel="icon" type="image/x-icon" href="src/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/services.js" defer></script>
+    <script src="scripts/basic.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('JsEnQuestion').style.display = 'flex';
+        });
+    </script>
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">Nazwa Firmy</a>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink" href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink active" href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink" href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <noscript>
+
+            <div class="container-fluid justify-content-md-center mdPlusScreen">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink" href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink active" href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink" href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </noscript>
+
+    </nav>
+
+    <div class="container px-5 py-5"></div>
+
+   <main class="flex-grow-1">
+
+        <div class="container py-5 bg-dark " style="border-radius: 1vw;">
+
+            <h2 class="text-center pb-5">Usługi Nazwa Firmy</h2>
+
+            <noscript>
+                <div class="col-fluid text-center noJsFound"><span>Aby móc przesłać zapytanie ofertowe, prosimy włączyć obsługę Javascript w swojej przeglądarce.</span></div>
+            </noscript>
+           
+            <ul class="nav nav-pills nav-fill bg-dark" role="tablist">
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link customlink active border-bottom" data-bs-toggle="tab" href="#descriptionCompany" role="tab" aria-selected="true">
+                        <i class="bi bi-info-circle-fill"></i>&nbsp;Opis
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" id="JsEnQuestion" style="display:none;" >
+                    <a class="nav-link customlink border-bottom" data-bs-toggle="tab" href="#offerCompany" role="tab" aria-selected="false">
+                        <i class="bi bi-stopwatch-fill"></i>&nbsp;Pomiar Czasu - zapytanie
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="bookmarks">
+
+                <div class="tab-pane fade show active pt-5" id="descriptionCompany" role="tabpanel">
+                    <div class="col-fluid p-5 mx-sm-5" style="background-color: #393E46;border-radius:1vw;">
+
+                        <h3 class="py-3 text-center">Opis Usług</h3>
+                        <p class="text-center m-3">
+                            <strong>Czy organizujesz bieg i chcesz zapewnić uczestnikom niezapomniane doświadczenie? Nasza firma specjalizuje się w precyzyjnym pomiarze czasu, dostarczając nie tylko wyników, ale także kompleksowego wsparcia w organizacji Twojego wydarzenia. Gwarantujemy profesjonalizm, niezawodność i innowacyjne rozwiązania, które sprawią, że Twój bieg będzie wyjątkowy. </strong>
+                        </p>
+
+                        <p class=" m-3">Co możemy dla Ciebie zrobić? Oto nasza oferta:</p>
+
+                        <ul>
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Profesjonalny pomiar czasu:</strong> Nasz zespół doświadczonych techników zapewni dokładny i niezawodny pomiar czasu dla wszystkich uczestników. Dzięki zaawansowanym systemom pomiarowym zapewniamy precyzję na najwyższym poziomie.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Ścianka z banerem imprezy:</strong> Stworzymy efektowną ściankę z banerem imprezy, która będzie doskonałym tłem do zdjęć uczestników i sponsorów. Dodaj profesjonalizmu i wyróżnij się na tle innych wydarzeń.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Balon dmuchany start/meta:</strong> Balon startu/meta: Udekoruj start i metę wyjątkowym balonem, który dodaje koloru i radości Twojemu biegowi. Stwórz niezapomnianą atmosferę dla uczestników i widzów, podkreślając ważny moment rozpoczęcia i zakończenia biegu.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Nagłośnienie dla komentatora:</strong> Zapewnij doskonałą jakość dźwięku podczas wydarzenia, dzięki naszemu profesjonalnemu nagłośnieniu. Komentatorzy będą mogli płynnie i wyraźnie relacjonować przebieg biegu.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Wysyłka SMS:</strong> Dostarczymy nowoczesny system wysyłki SMS, aby uczestnicy otrzymali natychmiastowe powiadomienia z wynikami biegu. Ułatwimy komunikację i dostarczymy informacje na bieżąco.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Fotograf:</strong> Nasz doświadczony fotograf uchwyci najważniejsze chwile Twojego biegu. Zapewnij uczestnikom pamiątkę w postaci profesjonalnych zdjęć, które będą świadectwem ich osiągnięć.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong> Pistolet hukowy do wystrzału:</strong> Rozpoczęcie biegu będzie niezapomnianym momentem dzięki użyciu naszego pistoletu hukowego. Stworzymy atmosferę oczekiwania i ekscytacji na starcie.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class=" m-3">
+                                    <strong>Bieg kolorów dla dzieci:</strong> Zapewnij niezapomniane przeżycia najmłodszym uczestnikom dzięki biegowi kolorów. Przed startem obsypemy dzieci kolorowymi proszkami, tworząc efektowne chmury kolorów.
+                                </p>
+                            </li>
+                        </ul>
+                        <p class=" m-3">
+                            Dodatkowo,<strong> oferujemy dwa rodzaje chipów pomiarowych</strong>, aby dostosować się do warunków terenowych. Na podmokłych i błotnistych polach zalecamy chipy zwrotne, które zapewniają optymalną precyzję. Natomiast dla innych terenów dostępne są chipy jednorazowe, które są wygodne i nie wymagają zwrotu.
+                        </p>
+
+                        <p class=" m-3">
+                            Nasza firma działa od kilku lat i zdobyła zaufanie wielu organizatorów biegów na terenie południowej Polski. Nasze doświadczenie i zaangażowanie gwarantują sukces Twojego wydarzenia.
+                        </p>
+
+
+                        <p class=" m-3">
+                            Wybierz naszą firmę pomiarową i daj swoim uczestnikom niezapomniane doświadczenie biegowe. Skontaktuj się z nami już dziś, aby omówić szczegóły i zaplanować wyjątkowe zawody biegowe!
+                        </p>
+
+
+                        <p class=" m-3">
+                            <strong>Działamy dla Ciebie </strong> - profesjonalna firma pomiaru czasu na zawodach biegowych.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade pt-5" id="offerCompany" role="tabpanel">
+
+                    <h3 class="py-3 text-center">
+                        Zapytanie Ofertowe
+                    </h3>
+
+                    <div class="container py-5 bg-dark" style="border-radius:1vw">
+
+                        <div class="row">
+
+                            <div class="col">
+
+                                <!--Przesłanie wiadomości na serwer pośredni (+ walidacja) i dopiero na maila.-->
+
+                                <form class="needs-validation" action="#" accept-charset="utf-8" method="post" name="formOfferContant" target="_self" novalidate>
+                                    <fieldset class="row g-3">
+
+                                        <legend>Wymagane</legend>
+
+                                        <div class="col-lg-6">
+                                            <label for="fstNameValid" class="form-label">Imie <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control basicForm" id="fstNameValid" placeholder="Jan" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\-]{2,}" required>
+                                            <div class="invalid-feedback">
+                                                Wpisz swoję imie.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="lstNameValid" class="form-label">Nazwisko <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control basicForm" id="lstNameValid" placeholder="Kowalski" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\-]{2,}" required>
+                                            <div class="invalid-feedback">
+                                                Wpisz swoję nazwisko.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="emailValid" class="form-label">Adres email <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control basicForm" id="emailValid" placeholder="jan.kowalski@przyklad.com" required>
+                                            <div class="invalid-feedback">
+                                                Wpisz swój poprawny adres email.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="telValid" class="form-label">Numer Kontaktowy  <span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-text basicForm">+48</span>
+                                                <input type="tel" class="form-control basicForm" id="telValid" placeholder="123 123 123" pattern="^[0-9\s\-]{9,}" required>
+                                                <div class="invalid-feedback">
+                                                    Wpisz swój poprawny numer kontaktowy.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="nameEventValid" class="form-label">Nazwa Imprezy  <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control basicForm" id="nameEventValid" placeholder="Przykladowa nazwa biegu" pattern="[A-Za-z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ\-\(\)\=\!\*]{5,}" required>
+                                            <div class="invalid-feedback">
+                                                Wpisz nazwę imprezy.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <label for="placeEventValid" class="form-label">Miejscowość  <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control basicForm" id="placeEventValid" placeholder="Warszawa" pattern="[A-Za-z]{3,}" required>
+                                            <div class="invalid-feedback">
+                                                Wpisz poprawną nazwe miejscowości.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <label for="dateEventValid" class="form-label">Data  <span class="text-danger">*</span></label>
+                                            <input type="date" class="form-control basicForm" placeholder="DD/MM/RRRR" style="color:gray; font-weight:normal;" id="dateEventValid" required>
+                                            <div class="invalid-feedback">
+                                                Podaj poprawną datę imprezy.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <label for="numberUsersValid" class="form-label">Przewidywana ilość uczestników  <span class="text-danger">*</span></label>
+                                            <input type="number" class="form-control basicForm" id="numberUsersValid" placeholder="250" min="1" required>
+                                            <div class="invalid-feedback">
+                                                Podaj przewidywaną ilość uczestników.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label for="chipChoiceValid" class="form-label">Wybierz rodzaj chipów  <span class="text-danger">*</span></label>
+                                            <div class="input-group align-items-center">
+                                                <select class="form-select basicFormSelect" id="chipChoiceValid" required>
+                                                    <option value="" class="basicFormDisabled" disabled hidden selected>Wybierz...</option>
+                                                    <option class="basicForm" value="Chipy jednorazowe">Chipy jednorazowe</option>
+                                                    <option class="basicForm" value="Chipy zwrotne">Chipy zwrotne</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Wybierz rodzaj chipów.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6">
+
+                                            <label for="classChoiceValid" class="form-label">Wybierz klasyfikacje   <span class="text-danger">*</span></label>
+
+                                            <div class="input-group align-items-center">
+
+                                                <select class="form-select basicFormSelect" id="classChoiceValid" required>
+                                                    <option value="" disabled hidden selected>Wybierz...</option>
+                                                    <option class="basicForm" value="Open i wiekowe">Kat. open i kat. wiekowe</option>
+                                                    <option class="basicForm" value="Open">Tylko kat. open</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Wybierz kategorie.
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="row g-3 pt-5">
+
+                                        <legend>Dodatkowe</legend>
+                                        <div class="row g-2 pt-3">
+
+                                            <div class="col-lg-6">
+                                                <div class="col-lg-6 form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="wallValid">
+                                                    <label for="wallValid" class="form-label">Ścianka z banerem</label>
+                                                </div>
+
+                                                <div class="col-lg-6  form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="ballonValid">
+                                                    <label for="ballonValid" class="form-label">Dmuchany Balon Start/Meta</label>
+                                                </div>
+
+                                                <div class="col-lg-6  form-check form-switch ">
+                                                    <input type="checkbox" class="form-check-input " id="speakerValid">
+                                                    <label for="speakerValid" class="form-label">Nagłośnienie dla komentatora (głośnik)</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="col-lg-6 form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="photographerValid">
+                                                    <label for="photographerValid" class="form-label">Fotograf</label>
+                                                </div>
+
+                                                <div class="col-lg-6  form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="runColorsValid">
+                                                    <label for="runColorsValid" class="form-label">Bieg kolorów dla dzieci</label>
+                                                </div>
+
+                                                <div class="col-lg-6  form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="smsValid">
+                                                    <label for="smsValid" class="form-label">Wysyłka SMS</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-3 mb-3">
+                                                <textarea class="form-control basicForm" id="descriptionEventValid" oninput="counterChars(this, 'counterDescChars')" rows="10" maxlength="1000" placeholder="Dopisz wszystkie potrzebne informacje oraz zadaj pytania. (Maksymalnie 1000 znaków) "></textarea>
+                                                <small class="form-text text-muted" id="counterDescChars"> 0/1000 znaków</small>
+                                            </div>
+
+                                            <div class="col-lg">
+                                                <div class="form-check">
+
+                                                    <input type="checkbox" class="form-check-input" id="requiredConsent" required>
+                                                    <label for="requiredConsent"><span class="text-danger">*</span> Wyrażam zgodę na przetwarzanie moich danych osobowych, takich jak imię, nazwisko, adres e-mail, numer telefonu, w celu udzielenia odpowiedzi na moje zapytanie lub zgłoszenie. Dane te będą przetwarzane wyłącznie w zakresie niezbędnym do udzielenia odpowiedzi lub podjęcia odpowiednich działań. Więcej informacji można znaleźć na stronie o  <i><a href="informacje.html" target="_blank">przetwarzaniu danych osobowych.</a></i></label>
+
+                                                    <div class="invalid-feedback">
+                                                        Proszę zaznaczyć zgodę.
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </fieldset>
+
+                                    <div class="col-fluid text-center mt-4">
+                                        <input type="submit" class="btn sendbutton" value="Wyślij">
+                                        <!--dodać alert o wysłaniu wiadomości na górze strony / pod przyciskiem -->
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                        <p class="mt-4"><span class="text-danger">*</span> - pole wymagane</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+   </main>
+
+    <div class="container px-5 py-5"></div>
+
+    <div class="footer bg-dark text-center r-bottom footerBasic" style="width:100%;">
+        <section class="">
+
+            <div class="row pt-4 px-5">
+
+                <div class="col-lg-3 px-2 pt-3">
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Nazwa Firmy
+                    </p>
+                    <p>
+                        Organizujemy imprezy sportowe oraz świadczymy profesjonalny pomiar czasu.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Social Media
+                    </p>
+                    <p class="mb-3">
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Facebooka"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Instagrama"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do grupy na Facebooku"><i class="bi bi-people-fill" style="font-size: 2rem;"></i></a>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3 selectable">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Kontakt
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-at-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> matuszczyk.artur@outlook.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> +48 123 123 123
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Wszelkie Prawe Zastrzeżone
+                    </p>
+                    <p>
+                        &copy; 2023 Copyright: <a href="https://www.linkedin.com/in/artur-matuszczyk/" target="_blank" style="text-decoration:none;"><cite title="LinkedIn Artur Matuszczyk">Artur Matuszczyk</cite></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="row p-4">
+
+            <div class="col">
+                <a href="informacje.html" class="active">Polityka Prywatności i Informacje Prawne</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

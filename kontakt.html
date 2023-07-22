@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt do firmy Nazwa Firmy">
+    <meta name="robots" content="index,follow">
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="src/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/basic.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('formContant').style.display = '';
+        });
+    </script>
+   
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">Nazwa Firmy</a>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink active " href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <noscript>
+
+            <div class="container-fluid justify-content-md-center mdPlusScreen">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink active " href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </noscript>
+
+    </nav>
+
+    <div class="container px-5 py-5"></div>
+    <main class="flex-grow-1">
+
+        <!--Przesłanie wiadomości na serwer pośredni (+ walidacja) i dopiero na maila.-->
+        <div class="container px-5 py-5 bg-dark " style="border-radius: 1vw;">
+
+            <div class="row g-5">
+
+                <div class="col-fluid">
+
+                    <noscript>
+                        <div class="col-fluid text-center noJsFound"><span>Aby móc przesłać formularz kontaktowy, prosimy włączyć obsługę Javascript w swojej przeglądarce.</span></div>
+                    </noscript>
+                
+                </div>
+
+                <div class="col text-center ">
+
+                    <h3>Formularz kontaktowy</h3>
+                    <i class="bi bi-envelope-paper-fill" style="color:white;" id="icon"></i>
+
+                </div>
+
+                <div class="col-lg-8" id="formContant" style="display:none;">
+
+                    <form class="needs-validation" action="#" method="post" name="formContact" target="_self" novalidate>
+
+                        <div class="mb-3">
+
+                            <label for="nameValid" class="form-label">Imie i Nazwisko <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control basicForm" id="nameValid" placeholder="Jan Kowalski" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ\s\-]{2,}" required>
+
+                            <div class="invalid-feedback">
+                                Wpisz swoje imię i nazwisko
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="topicMail">Temat <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control basicForm" id="topicMail" placeholder="Zapytanie" pattern="[A-Za-z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ\s\-\.\(\)]{2,}" required>
+
+                            <div class="invalid-feedback">
+                                Wpisz temat swojego pytania.
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="emailValid" class="form-label">Adres email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control basicForm" id="emailValid" placeholder="jan.kowalski@przyklad.com" required>
+
+                            <div class="invalid-feedback">
+                                Wpisz swój adres email.
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="telValid" class="form-label">Numer Telefonu</label>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text basicForm">+48</span>
+                                <input type="tel" class="form-control basicForm" id="telValid" placeholder="123 123 123" pattern="^[0-9\s\-]{9,}">
+                                <div class="invalid-feedback">
+                                    Nieprawidłowy numer telefonu.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-3 mb-3">
+
+                            <label for="messageValid" class="form-label">Treść wiadomości <span class="text-danger">*</span></label>
+
+                            <textarea class="form-control basicForm" oninput="counterChars(this, 'counterChars')" id="messageValid" rows="10" minlength="20" maxlength="1000" placeholder="Zadaj pytanie. (Zakres 20-1000 znaków) " required></textarea>
+
+                            <div class="invalid-feedback">
+                                Wpisz swoje pytanie.
+                            </div>
+                            <small class="form-text text-muted" id="counterChars" style="text-align:right !important;"> 0/1000 znaków</small>
+
+                        </div>
+
+                        <div class="col-lg">
+                            <div class="form-check">
+
+                                <input type="checkbox" class="form-check-input" id="requiredConsent" required>
+                                <label for="requiredConsent">Wyrażam zgodę na przetwarzanie moich danych osobowych, takich jak imię, nazwisko, adres e-mail, numer telefonu, w celu udzielenia odpowiedzi na moje zapytanie lub zgłoszenie. Dane te będą przetwarzane wyłącznie w zakresie niezbędnym do udzielenia odpowiedzi lub podjęcia odpowiednich działań. Więcej informacji można znaleźć na stronie o <i><a href="informacje.html" target="_blank">przetwarzaniu danych osobowych.</a></i></label>
+
+                                <div class="invalid-feedback">
+                                    Proszę zaznaczyć zgodę.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-auto text-center mt-4">
+
+                            <input type="submit" class="btn sendbutton" id="contactSubmit" value="Wyślij">
+
+                            <!--dodać alert o wysłaniu wiadomości na górze strony / pod przyciskiem -->
+
+                        </div>
+
+                    </form>
+
+                    <p class="mt-4"><span class="text-danger">*</span> - pole wymagane</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="container px-5 py-5"></div>
+
+    <div class="footer bg-dark text-center r-bottom footerBasic" style="width:100%;">
+        <section class="">
+
+            <div class="row pt-4 px-5">
+
+                <div class="col-lg-3 px-2 pt-3">
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Nazwa Firmy
+                    </p>
+                    <p>
+                        Organizujemy imprezy sportowe oraz świadczymy profesjonalny pomiar czasu.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Social Media
+                    </p>
+                    <p class="mb-3">
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Facebooka"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Instagrama"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do grupy na Facebooku"><i class="bi bi-people-fill" style="font-size: 2rem;"></i></a>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3 selectable">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Kontakt
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-at-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> matuszczyk.artur@outlook.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> +48 123 123 123
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Wszelkie Prawe Zastrzeżone
+                    </p>
+                    <p>
+                        &copy; 2023 Copyright: <a href="https://www.linkedin.com/in/artur-matuszczyk/" target="_blank" style="text-decoration:none;"><cite title="LinkedIn Artur Matuszczyk">Artur Matuszczyk</cite></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="row p-4">
+
+            <div class="col">
+                <a href="informacje.html" class="active">Polityka Prywatności i Informacje Prawne</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

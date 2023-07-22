@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacje firmy Nazwa Firmy">
+    <meta name="robots" content="index,follow">
+    <title>Informacje</title>
+    <link rel="icon" type="image/x-icon" href="src/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById('JsEnInformation').style.display = 'flex';
+            document.getElementById('JsEnCompany').style.display = 'flex';
+            document.getElementById('JsEnPrivacy').style.display = 'flex';
+        });
+    </script>
+</head>
+<body class="d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">Nazwa Firmy</a>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <noscript>
+
+            <div class="container-fluid justify-content-md-center mdPlusScreen">
+
+                <ul class="nav nav-pills flex-md-row flex-column text-white">
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="index.html">Strona Główna</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <li class="nav-item pt-2">
+                        <a class="nav-link customlink " href="kontakt.html">Kontakt</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </noscript>
+
+    </nav>
+
+    <div class="container px-5 py-5"></div>
+
+    <main class="flex-grow-1">
+
+        <div class="container py-5 bg-dark" style="border-radius:1vw;">
+
+            <ul class="nav nav-pills nav-fill bg-dark" role="tablist" id="containterPills">
+
+                <li class="nav-item" role="presentation" style="display:none;" id="JsEnPrivacy">
+                    <a class="nav-link customlink active border-bottom" data-bs-toggle="tab" href="#privacy" role="tab" aria-selected="true">
+                        Polityka Prywatności
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation"  style="display:none;" id="JsEnInformation">
+                    <a class="nav-link customlink border-bottom" data-bs-toggle="tab" href="#informations" role="tab" aria-selected="false">
+                        Informacje Prawne
+                    </a>
+                </li>
+
+                <li class="nav-item" role="presentation" style="display:none;" id="JsEnCompany">
+                    <a class="nav-link customlink border-bottom" data-bs-toggle="tab" href="#company" role="tab" aria-selected="false">
+                        Polityka Firmy
+                    </a>
+                </li>
+
+            </ul>
+
+            <noscript>
+
+                <ul class="nav nav-pills nav-fill bg-dark" role="tablist" id="containterPillsNoScript">
+
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link customlink active border-bottom" data-bs-toggle="tab" href="#privacy" role="tab" aria-selected="true">
+                            Polityka Prywatności i Informacje Prawne
+                        </a>
+                    </li>
+
+                </ul>
+
+            </noscript>
+
+            <div class="tab-content" id="bookmarks">
+
+                <div class="tab-pane fade show active pt-5" id="privacy">
+
+                    <div class="col-fluid p-5 mx-sm-5" style="background-color: #393E46;border-radius:1vw;">
+
+                        <h5 class="text-center m-3 py-5">
+                            Niniejsza Polityka Prywatności opisuje, w jaki sposób nasza firma gromadzi, używa, przechowuje i chroni dane osobowe naszych klientów. Zależy nam na ochronie prywatności naszych klientów i działamy zgodnie z obowiązującymi przepisami dotyczącymi ochrony danych osobowych.
+                        </h5>
+                        <ul>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Gromadzenie danych osobowych:</strong>
+                                    Podczas korzystania z naszych usług i zawierania umów, możemy gromadzić pewne informacje osobowe, takie jak imię, nazwisko, adres, adres e-mail, numer telefonu i inne niezbędne dane kontaktowe. Dane te są gromadzone w sposób legalny i uczciwy, zgodnie z przepisami prawa o ochronie danych osobowych.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong> Używanie danych osobowych:</strong>
+                                    Dane osobowe, które gromadzimy, są używane w celu świadczenia naszych usług, komunikacji z klientami, obsługi zamówień, udzielania informacji o naszych produktach i promocjach, oraz w celu spełnienia innych związanych z umową zobowiązań.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Przechowywanie danych osobowych:</strong>
+                                    Danych osobowych przechowujemy przez okres niezbędny do realizacji celów, dla których zostały zebrane, chyba że obowiązują nas dłuższe okresy przechowywania wynikające z przepisów prawa. Stosujemy odpowiednie środki bezpieczeństwa i techniczne, aby chronić dane osobowe przed nieautoryzowanym dostępem, utratą, zmianą lub nieuprawnionym ujawnieniem.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Udostępnianie danych osobowych:</strong>
+                                    W przypadku konieczności, w celu świadczenia naszych usług, możemy udostępniać dane osobowe niektórym zewnętrznym dostawcom usług, takim jak dostawcy usług płatności, dostawcy usług wysyłki, itp. Zapewniamy, że wszyscy nasi zewnętrzni dostawcy usług przestrzegają odpowiednich zasad ochrony danych osobowych.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Prawa osób, których dane dotyczą:</strong>
+                                    Osoby, których dane osobowe dotyczą, mają prawo żądać dostępu do swoich danych, ich poprawiania, usunięcia lub ograniczenia przetwarzania. Mogą również w dowolnym momencie wycofać zgodę na przetwarzanie swoich danych osobowych lub złożyć sprzeciw wobec ich przetwarzania. W celu skorzystania z tych praw, prosimy o kontakt z nami za pośrednictwem podanych danych kontaktowych.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Zmiany w Polityce Prywatności:</strong>
+                                    Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej Polityce Prywatności w dowolnym momencie. Aktualizacje i zmiany będą publikowane na naszej stronie internetowej. Zachęcamy do regularnego sprawdzania polityki prywatności w celu uzyskania najnowszych informacji na temat naszych praktyk ochrony danych.
+                                </p>
+                            </li>
+
+                        </ul>
+
+                        <p class="m-3">
+                            Jeżeli masz jakiekolwiek pytania dotyczące naszej Polityki Prywatności lub przetwarzania danych osobowych, prosimy o <i><a href="kontakt.html" target="_self">kontakt z nami.</a></i>. Jesteśmy zobowiązani do zapewnienia ochrony prywatności naszych klientów i odpowiedzi na wszelkie pytania i wątpliwości.
+                        </p>
+
+                        <noscript>
+                            <br><hr>
+                            <h5 class="text-center m-3 py-5">
+                                Niniejsze Informacje Prawne przedstawiają istotne aspekty prawne dotyczące naszej firmy. Zapewniamy jasność i przejrzystość w zakresie regulacji prawnych, które mają zastosowanie do naszych usług i działalności.
+                            </h5>
+
+                            <ul>
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Własność intelektualna:</strong>
+                                        Wszelkie prawa własności intelektualnej, takie jak prawa autorskie, znaki towarowe, patenty itp., związane z naszą firmą, naszymi produktami i usługami, są chronione zgodnie z obowiązującymi przepisami prawa. Zabrania się kopiowania, reprodukcji, modyfikacji lub wykorzystywania naszej własności intelektualnej bez naszej wyraźnej zgody.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Odpowiedzialność:</strong>
+                                        Dokładamy wszelkich starań, aby zapewnić dokładność i aktualność informacji zawartych na naszej stronie internetowej i w innych materiałach publikowanych przez nas. Niemniej jednak, nie ponosimy odpowiedzialności za ewentualne błędy, niedokładności lub niekompletność informacji. Korzystanie z naszych usług odbywa się na własne ryzyko.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Zewnętrzne odnośniki:</strong>
+                                        Nasza strona internetowa może zawierać odnośniki do zewnętrznych stron internetowych. Nie ponosimy odpowiedzialności za treść, politykę prywatności ani praktyki tych zewnętrznych stron. Przed korzystaniem z tych stron zalecamy zapoznanie się z ich warunkami użytkowania i polityką prywatności.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Ochrona danych osobowych:</strong>
+                                        Szanujemy prywatność naszych użytkowników i klientów. Gromadzimy, przetwarzamy i przechowujemy dane osobowe zgodnie z obowiązującymi przepisami o ochronie danych osobowych. Szczegółowe informacje na ten temat można znaleźć w naszej Polityce Prywatności.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Zastrzeżenie zmian:</strong>
+                                        Zastrzegamy sobie prawo do wprowadzania zmian w naszych Informacjach Prawnych w dowolnym momencie. Aktualizacje i zmiany będą publikowane na naszej stronie internetowej. Zachęcamy do regularnego sprawdzania naszych informacji prawnych w celu uzyskania najnowszych informacji dotyczących naszych praktyk i regulacji prawnych.
+                                    </p>
+                                </li>
+
+                            </ul>
+
+                            <p class="m-3">
+                                Jeżeli masz pytania dotyczące naszych Informacji Prawnych lub potrzebujesz dodatkowych informacji, <i><a href="kontakt.html" target="_self">skontaktuj się z nami</a></i>. Jesteśmy gotowi odpowiedzieć na Twoje pytania i zapewnić wsparcie związane z naszymi regulacjami prawymi.
+                            </p>
+
+                            <p class="m-3">
+                                Ważne jest, aby zapoznać się z naszymi Informacjami Prawnymi i przestrzegać obowiązujących przepisów, aby móc korzystać z naszych usług w sposób zgodny z prawem i zasadami naszej firmy.
+                            </p>
+
+                            <br><hr>
+
+                            <h5 class="text-center m-3 py-5">
+                                Niniejsza Polityka Firmy przedstawia ważne aspekty działalności i wartości naszej firmy. Jesteśmy zobowiązani do działania w sposób transparentny, zgodny z przepisami prawa i najwyższymi standardami jakości.
+                            </h5>
+
+                            <ul>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong> Kliento-orientacja:</strong>
+                                        Nasza firma kładzie nacisk na zadowolenie klientów i dążenie do przekraczania ich oczekiwań. Naszym celem jest dostarczenie wysokiej jakości usług, innowacyjnych rozwiązań i doskonałej obsługi klienta. Stawiamy na budowanie długoterminowych relacji opartych na zaufaniu i wzajemnym korzystaniu.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Profesjonalizm i jakość:</strong>
+                                        Dążymy do osiągania najwyższych standardów jakości we wszystkich dziedzinach naszej działalności. Nasz zespół składa się z wykwalifikowanych specjalistów, którzy stale rozwijają swoje umiejętności. Inwestujemy w nowoczesne technologie i narzędzia, aby zapewnić naszym klientom doskonałą jakość usług.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Etyka i zgodność z przepisami:</strong>
+                                        Postępujemy zgodnie z najwyższymi standardami etycznymi i przestrzegamy obowiązujących przepisów prawa. Działamy uczciwie, uczciwie i dbamy o poufność informacji klientów. Nie tolerujemy działań niezgodnych z zasadami etycznymi ani nielegalnych praktyk.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Zrównoważony rozwój:</strong>
+                                        Jesteśmy świadomi naszej odpowiedzialności wobec społeczeństwa i środowiska naturalnego. Dążyliśmy do minimalizacji naszego wpływu na środowisko poprzez podejmowanie działań związanych z ochroną środowiska, racjonalnym wykorzystaniem zasobów oraz wspieraniem inicjatyw społecznych.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong>Innowacyjność i rozwój:</strong>
+                                        Stale poszukujemy nowych możliwości rozwoju i innowacji, aby sprostać zmieniającym się potrzebom klientów i rynku. Inwestujemy w badania i rozwój, współpracujemy z partnerami biznesowymi oraz śledzimy trendy i nowe technologie, aby pozostać na czele branży.
+                                    </p>
+                                </li>
+
+                                <li>
+                                    <p class="m-3">
+                                        <strong> Zespół i kultura organizacyjna:</strong>
+                                        Nasza firma ceni talent, różnorodność i współpracę. Tworzymy inspirujące środowisko pracy, w którym nasi pracownicy mają możliwość rozwoju, wykorzystania swojego potencjału i osiągania sukcesów. Dążymy do budowania zespołu zmotywowanych i zaangażowanych profesjonalistów.
+                                    </p>
+                                </li>
+
+                            </ul>
+
+                            <p class="m-3">
+                                Nasza Polityka Firmy jest fundamentem naszej działalności i służy jako wytyczne dla wszystkich pracowników. Stale doskonalimy nasze praktyki i podejścia, aby sprostać rosnącym wymaganiom klientów i środowiska biznesowego.
+                            </p>
+
+                            <p class="m-3">
+                                Jeśli masz pytania dotyczące naszej Polityki Firmy lub chcesz uzyskać więcej informacji, <i><a href="kontakt.html" target="_self">skontaktuj się z nami</a></i>. Jesteśmy gotowi podzielić się naszymi wartościami i odpowiedzieć na Twoje pytania.
+                            </p>
+
+                        </noscript>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade pt-5" id="informations" role="tabpanel">
+                   
+                    <div class="col-fluid p-5 mx-sm-5" style="background-color: #393E46;border-radius:1vw;">
+
+                        <h5 class="text-center m-3 py-5">
+                            Niniejsze Informacje Prawne przedstawiają istotne aspekty prawne dotyczące naszej firmy. Zapewniamy jasność i przejrzystość w zakresie regulacji prawnych, które mają zastosowanie do naszych usług i działalności.
+                        </h5>
+
+                        <ul>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Własność intelektualna:</strong>
+                                    Wszelkie prawa własności intelektualnej, takie jak prawa autorskie, znaki towarowe, patenty itp., związane z naszą firmą, naszymi produktami i usługami, są chronione zgodnie z obowiązującymi przepisami prawa. Zabrania się kopiowania, reprodukcji, modyfikacji lub wykorzystywania naszej własności intelektualnej bez naszej wyraźnej zgody.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Odpowiedzialność:</strong>
+                                    Dokładamy wszelkich starań, aby zapewnić dokładność i aktualność informacji zawartych na naszej stronie internetowej i w innych materiałach publikowanych przez nas. Niemniej jednak, nie ponosimy odpowiedzialności za ewentualne błędy, niedokładności lub niekompletność informacji. Korzystanie z naszych usług odbywa się na własne ryzyko.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Zewnętrzne odnośniki:</strong>
+                                    Nasza strona internetowa może zawierać odnośniki do zewnętrznych stron internetowych. Nie ponosimy odpowiedzialności za treść, politykę prywatności ani praktyki tych zewnętrznych stron. Przed korzystaniem z tych stron zalecamy zapoznanie się z ich warunkami użytkowania i polityką prywatności.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Ochrona danych osobowych:</strong>
+                                    Szanujemy prywatność naszych użytkowników i klientów. Gromadzimy, przetwarzamy i przechowujemy dane osobowe zgodnie z obowiązującymi przepisami o ochronie danych osobowych. Szczegółowe informacje na ten temat można znaleźć w naszej Polityce Prywatności.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="m-3">
+                                    <strong>Zastrzeżenie zmian:</strong>
+                                    Zastrzegamy sobie prawo do wprowadzania zmian w naszych Informacjach Prawnych w dowolnym momencie. Aktualizacje i zmiany będą publikowane na naszej stronie internetowej. Zachęcamy do regularnego sprawdzania naszych informacji prawnych w celu uzyskania najnowszych informacji dotyczących naszych praktyk i regulacji prawnych.
+                                </p>
+                            </li>
+
+                        </ul>
+
+                        <p class="m-3">
+                            Jeżeli masz pytania dotyczące naszych Informacji Prawnych lub potrzebujesz dodatkowych informacji, <i><a href="kontakt.html" target="_self">skontaktuj się z nami</a></i>. Jesteśmy gotowi odpowiedzieć na Twoje pytania i zapewnić wsparcie związane z naszymi regulacjami prawymi.
+                        </p>
+
+                        <p class="m-3">
+                            Ważne jest, aby zapoznać się z naszymi Informacjami Prawnymi i przestrzegać obowiązujących przepisów, aby móc korzystać z naszych usług w sposób zgodny z prawem i zasadami naszej firmy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade pt-5" id="company" role="tabpanel">
+
+                    <div class="col-fluid p-5 mx-sm-5" style="background-color: #393E46;border-radius:1vw;">
+
+                        <h5 class="text-center m-3 py-5">
+                            Niniejsza Polityka Firmy przedstawia ważne aspekty działalności i wartości naszej firmy. Jesteśmy zobowiązani do działania w sposób transparentny, zgodny z przepisami prawa i najwyższymi standardami jakości.
+                        </h5>
+
+                        <ul>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong> Kliento-orientacja:</strong>
+                                    Nasza firma kładzie nacisk na zadowolenie klientów i dążenie do przekraczania ich oczekiwań. Naszym celem jest dostarczenie wysokiej jakości usług, innowacyjnych rozwiązań i doskonałej obsługi klienta. Stawiamy na budowanie długoterminowych relacji opartych na zaufaniu i wzajemnym korzystaniu.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Profesjonalizm i jakość:</strong>
+                                    Dążymy do osiągania najwyższych standardów jakości we wszystkich dziedzinach naszej działalności. Nasz zespół składa się z wykwalifikowanych specjalistów, którzy stale rozwijają swoje umiejętności. Inwestujemy w nowoczesne technologie i narzędzia, aby zapewnić naszym klientom doskonałą jakość usług.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Etyka i zgodność z przepisami:</strong>
+                                    Postępujemy zgodnie z najwyższymi standardami etycznymi i przestrzegamy obowiązujących przepisów prawa. Działamy uczciwie, uczciwie i dbamy o poufność informacji klientów. Nie tolerujemy działań niezgodnych z zasadami etycznymi ani nielegalnych praktyk.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Zrównoważony rozwój:</strong>
+                                    Jesteśmy świadomi naszej odpowiedzialności wobec społeczeństwa i środowiska naturalnego. Dążyliśmy do minimalizacji naszego wpływu na środowisko poprzez podejmowanie działań związanych z ochroną środowiska, racjonalnym wykorzystaniem zasobów oraz wspieraniem inicjatyw społecznych.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong>Innowacyjność i rozwój:</strong>
+                                    Stale poszukujemy nowych możliwości rozwoju i innowacji, aby sprostać zmieniającym się potrzebom klientów i rynku. Inwestujemy w badania i rozwój, współpracujemy z partnerami biznesowymi oraz śledzimy trendy i nowe technologie, aby pozostać na czele branży.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="m-3">
+                                    <strong> Zespół i kultura organizacyjna:</strong>
+                                    Nasza firma ceni talent, różnorodność i współpracę. Tworzymy inspirujące środowisko pracy, w którym nasi pracownicy mają możliwość rozwoju, wykorzystania swojego potencjału i osiągania sukcesów. Dążymy do budowania zespołu zmotywowanych i zaangażowanych profesjonalistów.
+                                </p>
+                            </li>
+
+                        </ul>
+
+                        <p class="m-3">
+                            Nasza Polityka Firmy jest fundamentem naszej działalności i służy jako wytyczne dla wszystkich pracowników. Stale doskonalimy nasze praktyki i podejścia, aby sprostać rosnącym wymaganiom klientów i środowiska biznesowego.
+                        </p>
+
+                        <p class="m-3">
+                            Jeśli masz pytania dotyczące naszej Polityki Firmy lub chcesz uzyskać więcej informacji, <i><a href="kontakt.html" target="_self">skontaktuj się z nami</a></i>. Jesteśmy gotowi podzielić się naszymi wartościami i odpowiedzieć na Twoje pytania.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="container px-5 py-5"></div>
+
+    <div class="footer bg-dark text-center r-bottom footerBasic" style="width:100%;">
+        <section class="">
+
+            <div class="row pt-4 px-5">
+
+                <div class="col-lg-3 px-2 pt-3">
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Nazwa Firmy
+                    </p>
+                    <p>
+                        Organizujemy imprezy sportowe oraz świadczymy profesjonalny pomiar czasu.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Social Media
+                    </p>
+                    <p class="mb-3">
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Facebooka"><i class="bi bi-facebook" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do Instagrama"><i class="bi bi-instagram" style="font-size: 2rem;"></i></a>
+                        <a class="me-3" href="#" target="_blank" aria-label="Link do grupy na Facebooku"><i class="bi bi-people-fill" style="font-size: 2rem;"></i></a>
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3 selectable">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Kontakt
+                    </p>
+                    <p>
+                        <i class="bi bi-envelope-at-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> matuszczyk.artur@outlook.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> +48 123 123 123
+                    </p>
+
+                </div>
+
+                <div class="col-lg-3 px-2 pt-3">
+
+                    <p class="h6 text-uppercase fw-bold mb-4">
+                        Wszelkie Prawe Zastrzeżone
+                    </p>
+                    <p>
+                        &copy; 2023 Copyright: <a href="https://www.linkedin.com/in/artur-matuszczyk/" target="_blank" style="text-decoration:none;"><cite title="LinkedIn Artur Matuszczyk">Artur Matuszczyk</cite></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="row p-4">
+
+            <div class="col">
+                <a href="informacje.html" class="active">Polityka Prywatności i Informacje Prawne</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
