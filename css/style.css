@@ -1,11 +1,37 @@
-﻿/*Ciało strony*/
+﻿@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Black.ttf') format('ttf');
+}
 *{
     margin:0px;
     padding:0;
 }
+:root {
+    --noscript-color: red;
+    --ligthSwitch: #fcfcfc;
+    --darkSwitch: #616161;
+    --noActSwitch: #8cafca;
+    --ActSwitch: #5ab054;
+    --txtForm-color: #000000;
+    --form-color: #ffffff;
+    --hover-color: #858585;
+    --placeholder-color: #808080;
+}
+body[data-theme="light"] {
+    --bg-color: #ffffff;
+    --navbar-color: #f7f7f7;
+    --txt-color: #000000;
+    --second-color: #e8e8e8;
+}
+body[data-theme="dark"] {
+    --bg-color: #3d3d3d;
+    --navbar-color: #000000;
+    --txt-color: #eeeeee;
+    --second-color: #3d3d3d;
+}
 body {
-    background-color: #393E46;
-    color: #EEEEEE;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -17,134 +43,111 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     scroll-behavior:smooth;
+    font-family:Roboto, sans-serif;
 }
-
-/*Pasek Nawigacji*/
+.navbar {
+    background-color: var(--navbar-color);
+}
+.footer {
+    background-color: var(--navbar-color);
+}
+.mainColor{
+    background-color: var(--navbar-color);
+}
 .customlink {
-    color: #EEEEEE;
+    color:var(--txt-color);
     text-decoration: none;
     padding: 16px 16px;
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .customlink:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--hover-color);
+    color:var(--txt-color);
     font-weight: bolder;
 }
-
 .nav-item .nav-link.customlink.active {
-    color: #EEEEEE;
-    background-color: #D65A31;
+    color: var(--txt-color);
+    background-color: var(--second-color);
     font-weight: bolder;
 }
-
-/*Przycisk wysyłania*/
 .btn.sendbutton {
-    background-color: #D65A31;
-    color: #EEEEEE;
-    font-weight: bolder;
+    background-color: var(--second-color);
+    color: var(--txt-color);
+    font-weight: normal;
     width: 100%;
 }
-/*Linki*/
+.btn.sendbutton:hover{
+    font-weight:bold;
+    background-color:var(--hover-color);
+}
 a{
-    color:#EEEEEE;
+    color:var(--txt-color);
 }
 a:hover{
     text-decoration:none;
-    color:#EEEEEE;
+    color:var(--txt-color);
 }
-/*Switche formularzy*/
-.form-switch .form-check-input{
-    background-color:lightblue;
+.form-switch .form-check-input {
+    background-color: var(--noActSwitch);
+    border-color:var(--noActSwitch);
 }
-.form-switch .form-check-input:checked {
-    background-color: lawngreen;
+.form-switch .form-check-input:checked, .form-check-input:checked {
+    background-color: var(--ActSwitch);
+    border-color: var(--ActSwitch);    
 }
-/*Tabela Wynikow*/
+.changeMode {
+    background-color: var(--ligthSwitch) !important;
+    border-color: var(--txt-color) !important;
+}
+.changeMode:checked {
+    background-color: var(--darkSwitch) !important;
+    border-color: var(--txt-color);
+}
+.theme-switcher input[type='checkbox'] + label .bi-sun-fill, .theme-switcher input[type='checkbox']:checked + label .bi-moon-fill {
+    display: inline-block;
+}
+
+.theme-switcher input[type='checkbox'] + label .bi-moon-fill, .theme-switcher input[type='checkbox']:checked + label .bi-sun-fill {
+    display: none;
+}
 .tableSearch {
-    color: #EEEEEE !important;
-    border: 1px solid #000;
+    color: var(--txt-color) !important;
+    border: 1px solid var(--txt-color);
 }
 .tableSearch thead {
-        background-color: #D65A31;
+    background-color: var(--second-color);
 }
 .tableSearch tbody tr:hover {
-    background-color: #000 !important;
+    background-color: var(--hover-color) !important;
     font-weight: bold;
 }
 .tableSearch tbody tr:nth-child(2n+1) {
-    background-color: #222831;
+    background-color: var(--navbar-color); 
 }
-.tableSearch .btn{
-    font-weight:bold;
+.tableSearch tbody tr:nth-child(2n) {
+    background-color: var(--second-color);
 }
-/*Paginacja*/
-.paginButton {
-    background-color: #D65A31 !important;
-    font-weight:bolder;
-}
-/*Przyciski paginacji*/
-.roundedPaginationButton {
-    width: 3rem !important;
-    height: 3rem !important;
-    border-radius: 15%;
-    font-weight: bolder;
-    background-color: #D65A31;
-    border: 1px solid #D65A31;
-    color:#EEEEEE;
-}
-.roundedPaginationButton:disabled {
-    background-color: #393E46;
-    border: 1px solid #393E46;
-    font-weight: normal;
-    color:#EEEEEE;
-}
-.roundedPaginationButton:hover, .roundedPaginationButton:active {
-    background-color: #fff;
-    color: #000;
-    font-weight: bolder;
-    border: 1px solid #fff;
-}
-/*Wpisywanie strony paginacji*/
-.roundedInputNumber {
-    width: 3rem !important;
-    height: 3rem !important;
-    border-radius: 15%;
-    font-weight: bolder;
-    background-color: #EEEEEE;
-    border: 1px solid #EEEEEE;
-    color: #000;
-}
-/* Przycisk Wyszukaj */
-.roundedSearchButton {
-    background-color: #D65A31;
-    color: #EEEEEE;
-    font-weight: bolder;
-    width:100%;
-}
-/*Formularze - podstawowe kolory*/
+
 .basicForm, .basicForm:focus {
-    background-color: #D9D9D9;
-    border: 0px solid #D9D9D9 !important;
-    color: #000;
+    background-color: var(--form-color);
+    border: 0px solid var(--form-color) !important;
+    color: var(--txtForm-color);
     font-weight: bold;
 }
-    .basicForm::placeholder {
-        font-weight: normal;
-        color: #2D2727;
-    }
+.basicForm::placeholder {
+    font-weight: normal;
+    color: var(--placeholder-color);
+}
 .basicFormSelect {
-    border: 0px solid #D9D9D9 !important;
-    background-color: #D9D9D9;
-    color: grey;
+    border: 0px solid var(--form-color) !important;
+    background-color: var(--form-color);
+    color: var(--placeholder-color);
 }
-select option[disabled][hidden]:checked {
-    color:grey;
-    font-weight:normal;
-}
-/*Stopka - podstawowe*/
 .footerBasic {
     font-size: 1rem;
+}
+.footerBasic .row{
+    width:100% !important;
 }
 .selectable {
     user-select: text;
@@ -152,32 +155,61 @@ select option[disabled][hidden]:checked {
     -webkit-user-select: text;
     -ms-user-select:text;
 }
-
-/*  --- Dla noscriptu --- */
 .noJsFound{
-    color:red;
+    color:var(--noscript-color);
     padding:2rem;
 }
-
-/*Ikony*/
 #icon {
     font-size: 19vw;
 }
-/*Urzadzenia z bardzo dużą rozdzielczością*/
 @media (min-width: 2000px) {
     #icon {
         font-size: 350px;
     }
 }
-/*Urzadzenia md+ */
-@media (min-width: 993px){
-    .mdPlusScreen{
-        display:none;
+@media (min-width: 993px) {
+    .mdPlusScreen {
+        display: none;
     }
 }
-/*Urządzenia xs - */
-@media (max-width:575px){
-    .onlySmallPlusScreen{
-        display:none;
+/*Paginacja*/
+/*.paginButton {
+    background-color: var(--second-color) !important;
+    font-weight:bolder;
+}
+.roundedPaginationButton {
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 15%;
+    font-weight: bolder;
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+    color:var(--txt-color);
+}
+.roundedPaginationButton:disabled {
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    font-weight: normal;
+    color:var(--txt-color);
+}
+.roundedPaginationButton:hover, .roundedPaginationButton:active {
+    background-color: var(--hover-color);
+    color: var(--txt-color);
+    font-weight: bolder;
+    border: 1px solid var(--hover-color);
+}
+.roundedInputNumber {
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 15%;
+    font-weight: bolder;
+    background-color: var(--txt-color);
+    border: 1px solid var(--txt-color);
+    color: var(--hover-color);
+}
+@media (max-width:575px) {
+    .onlySmallPlusScreen {
+        display: none;
     }
 }
+*/

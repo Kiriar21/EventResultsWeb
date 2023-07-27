@@ -23,17 +23,17 @@ function useData() {
     });
 }
 
-function changeTheme(ele, col, weight) {
+function changeFonts(ele, col, weight) {
     ele.style.color = col;
     ele.style.fontWeight = weight;
 }
 
 function typeText(ele) {
-    changeTheme(ele, '#000', 'bold');
+    changeFonts(ele, 'var(--txtForm-color)', 'bold');
 }
 
 function placeholderText(ele) {
-    changeTheme(ele, '#2D2727', 'normal');
+    changeFonts(ele, 'var(--placeholder-color)', 'normal');
 }
 
 window.addEventListener("load", useData);
