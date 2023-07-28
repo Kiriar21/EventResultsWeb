@@ -146,7 +146,7 @@ a:hover{
 .footerBasic {
     font-size: 1rem;
 }
-.footerBasic .row{
+.footerBasic .row, header{
     width:100% !important;
 }
 .selectable {

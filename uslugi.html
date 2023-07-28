@@ -17,18 +17,52 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             document.getElementById('JsEnQuestion').style.display = 'flex';
+            document.getElementById('themeSwitchID').style.display = 'flex';
         });
     </script>
 </head>
 <body data-theme="dark" class="d-flex flex-column">
+
+    <header class="container" style="background-color:var(--navbar-color);min-width:100%; max-width:100%;">
+
+        <div class="row">
+
+            <div class="col py-2 mx-0 mx-lg-2">
+
+                <a class="navbar-brand" style="color:var(--txt-color);" href="index.html"><strong>Nazwa Firmy</strong></a>
+
+            </div>
+
+            <div class="col py-2 d-flex justify-content-end">
+
+                <div class="theme-switcher" id="themeSwitchID" style="display:none;">
+
+                    <div class="form-check form-switch">
+
+                        <input type="checkbox" class="form-check-input changeMode" checked id="switchMode">
+
+                        <label for="switchMode">
+                            <i class="bi bi-sun-fill"></i>
+                            <i class="bi bi-moon-fill"></i>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
     <nav class="navbar navbar-expand-lg navbar-light">
+
         <div class="container-fluid">
 
             <button class="navbar-toggler" style="background-color:var(--bg-color);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <a class="navbar-brand" style="color:var(--txt-color);" href="index.html">Nazwa Firmy</a>
 
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarToggler">
 
@@ -46,21 +80,6 @@
                     </li>
 
                 </ul>
-
-            </div>
-
-            <div class="theme-switcher ml-auto">
-
-                <div class="col form-check form-switch">
-
-                    <input type="checkbox" class="form-check-input changeMode" checked id="switchMode">
-
-                    <label for="switchMode">
-                        <i class="bi bi-sun-fill"></i>
-                        <i class="bi bi-moon-fill"></i>
-                    </label>
-
-                </div>
 
             </div>
 
@@ -91,7 +110,9 @@
 
     </nav>
 
-    <div class="container px-5 py-5"></div>
+    <aside>
+        <div class="container p-5"></div>
+    </aside>
 
     <main class="flex-grow-1">
 
@@ -126,7 +147,7 @@
 
                         <h3 class="py-3 text-center">Opis Usług</h3>
                         <p class="text-center m-3">
-                            <strong>Czy organizujesz bieg i chcesz zapewnić uczestnikom niezapomniane doświadczenie? Nasza firma specjalizuje się w precyzyjnym pomiarze czasu, dostarczając nie tylko wyników, ale także kompleksowego wsparcia w organizacji Twojego wydarzenia. Gwarantujemy profesjonalizm, niezawodność i innowacyjne rozwiązania, które sprawią, że Twój bieg będzie wyjątkowy. </strong>
+                            <b>Czy organizujesz bieg i chcesz zapewnić uczestnikom niezapomniane doświadczenie? Nasza firma specjalizuje się w precyzyjnym pomiarze czasu, dostarczając nie tylko wyników, ale także kompleksowego wsparcia w organizacji Twojego wydarzenia. Gwarantujemy profesjonalizm, niezawodność i innowacyjne rozwiązania, które sprawią, że Twój bieg będzie wyjątkowy. </b>
                         </p>
 
                         <p class=" m-3">Co możemy dla Ciebie zrobić? Oto nasza oferta:</p>
@@ -134,54 +155,54 @@
                         <ul>
                             <li>
                                 <p class=" m-3">
-                                    <strong>Profesjonalny pomiar czasu:</strong> Nasz zespół doświadczonych techników zapewni dokładny i niezawodny pomiar czasu dla wszystkich uczestników. Dzięki zaawansowanym systemom pomiarowym zapewniamy precyzję na najwyższym poziomie.
+                                    <b>Profesjonalny pomiar czasu:</b> Nasz zespół doświadczonych techników zapewni dokładny i niezawodny pomiar czasu dla wszystkich uczestników. Dzięki zaawansowanym systemom pomiarowym zapewniamy precyzję na najwyższym poziomie.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Ścianka z banerem imprezy:</strong> Stworzymy efektowną ściankę z banerem imprezy, która będzie doskonałym tłem do zdjęć uczestników i sponsorów. Dodaj profesjonalizmu i wyróżnij się na tle innych wydarzeń.
+                                    <b>Ścianka z banerem imprezy:</b> Stworzymy efektowną ściankę z banerem imprezy, która będzie doskonałym tłem do zdjęć uczestników i sponsorów. Dodaj profesjonalizmu i wyróżnij się na tle innych wydarzeń.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Balon dmuchany start/meta:</strong> Balon startu/meta: Udekoruj start i metę wyjątkowym balonem, który dodaje koloru i radości Twojemu biegowi. Stwórz niezapomnianą atmosferę dla uczestników i widzów, podkreślając ważny moment rozpoczęcia i zakończenia biegu.
+                                    <b>Balon dmuchany start/meta:</b> Balon startu/meta: Udekoruj start i metę wyjątkowym balonem, który dodaje koloru i radości Twojemu biegowi. Stwórz niezapomnianą atmosferę dla uczestników i widzów, podkreślając ważny moment rozpoczęcia i zakończenia biegu.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Nagłośnienie dla komentatora:</strong> Zapewnij doskonałą jakość dźwięku podczas wydarzenia, dzięki naszemu profesjonalnemu nagłośnieniu. Komentatorzy będą mogli płynnie i wyraźnie relacjonować przebieg biegu.
+                                    <b>Nagłośnienie dla komentatora:</b> Zapewnij doskonałą jakość dźwięku podczas wydarzenia, dzięki naszemu profesjonalnemu nagłośnieniu. Komentatorzy będą mogli płynnie i wyraźnie relacjonować przebieg biegu.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Wysyłka SMS:</strong> Dostarczymy nowoczesny system wysyłki SMS, aby uczestnicy otrzymali natychmiastowe powiadomienia z wynikami biegu. Ułatwimy komunikację i dostarczymy informacje na bieżąco.
+                                    <b>Wysyłka SMS:</b> Dostarczymy nowoczesny system wysyłki SMS, aby uczestnicy otrzymali natychmiastowe powiadomienia z wynikami biegu. Ułatwimy komunikację i dostarczymy informacje na bieżąco.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Fotograf:</strong> Nasz doświadczony fotograf uchwyci najważniejsze chwile Twojego biegu. Zapewnij uczestnikom pamiątkę w postaci profesjonalnych zdjęć, które będą świadectwem ich osiągnięć.
+                                    <b>Fotograf:</b> Nasz doświadczony fotograf uchwyci najważniejsze chwile Twojego biegu. Zapewnij uczestnikom pamiątkę w postaci profesjonalnych zdjęć, które będą świadectwem ich osiągnięć.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong> Pistolet hukowy do wystrzału:</strong> Rozpoczęcie biegu będzie niezapomnianym momentem dzięki użyciu naszego pistoletu hukowego. Stworzymy atmosferę oczekiwania i ekscytacji na starcie.
+                                    <b> Pistolet hukowy do wystrzału:</b> Rozpoczęcie biegu będzie niezapomnianym momentem dzięki użyciu naszego pistoletu hukowego. Stworzymy atmosferę oczekiwania i ekscytacji na starcie.
                                 </p>
                             </li>
 
                             <li>
                                 <p class=" m-3">
-                                    <strong>Bieg kolorów dla dzieci:</strong> Zapewnij niezapomniane przeżycia najmłodszym uczestnikom dzięki biegowi kolorów. Przed startem obsypemy dzieci kolorowymi proszkami, tworząc efektowne chmury kolorów.
+                                    <b>Bieg kolorów dla dzieci:</b> Zapewnij niezapomniane przeżycia najmłodszym uczestnikom dzięki biegowi kolorów. Przed startem obsypemy dzieci kolorowymi proszkami, tworząc efektowne chmury kolorów.
                                 </p>
                             </li>
                         </ul>
                         <p class=" m-3">
-                            Dodatkowo,<strong> oferujemy dwa rodzaje chipów pomiarowych</strong>, aby dostosować się do warunków terenowych. Na podmokłych i błotnistych polach zalecamy chipy zwrotne, które zapewniają optymalną precyzję. Natomiast dla innych terenów dostępne są chipy jednorazowe, które są wygodne i nie wymagają zwrotu.
+                            Dodatkowo,<b> oferujemy dwa rodzaje chipów pomiarowych</b>, aby dostosować się do warunków terenowych. Na podmokłych i błotnistych polach zalecamy chipy zwrotne, które zapewniają optymalną precyzję. Natomiast dla innych terenów dostępne są chipy jednorazowe, które są wygodne i nie wymagają zwrotu.
                         </p>
 
                         <p class=" m-3">
@@ -405,9 +426,11 @@
 
     </main>
 
-    <div class="container px-5 py-5"></div>
+    <aside>
+        <div class="container p-5"></div>
+    </aside>
 
-    <div class="footer text-center r-bottom footerBasic" style="width:100%;">
+    <footer class="footer text-center r-bottom footerBasic" style="width:100%;">
 
         <div class="row pt-4 px-5">
 
@@ -438,13 +461,18 @@
                 <p class="h6 text-uppercase fw-bold mb-4">
                     Kontakt
                 </p>
-                <p>
-                    <i class="bi bi-envelope-at-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> matuszczyk.artur@outlook.com
-                </p>
 
-                <p>
-                    <i class="bi bi-telephone-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> +48 123 123 123
-                </p>
+                <address>
+
+                    <p>
+                        <i class="bi bi-envelope-at-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> matuszczyk.artur@outlook.com
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill align-middle me-2" style="font-size: 1.5rem;text-decoration:none;"></i> +48 123 123 123
+                    </p>
+
+                </address>
 
             </div>
 
@@ -469,7 +497,7 @@
 
         </div>
 
-    </div>
+    </footer>
     <script src="scripts/theme.js" defer></script>
 
 </body>
